@@ -5,6 +5,6 @@ This is the last submission of the Frontend Nano Degree and it is required to cr
 
 <em>'npm start' to view project on localhost:8082</em>
 
-</br>Graduate from program April 2020
+</br>Graduated from the program April 2020
 
 <img src="certificate_web_developer.png" width="500px;" />
