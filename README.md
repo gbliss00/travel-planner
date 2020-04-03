@@ -7,4 +7,4 @@ This is the last submission of the Frontend Nano Degree and it is required to cr
 
 </br>Graduated from the program April 2020
 
-<img src="certificate_web_developer.png" width="500px;" />
+<img src="certificate_web_developer.png" width="700px;" />
