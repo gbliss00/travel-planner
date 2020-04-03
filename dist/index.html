@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <!-- make responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Planner</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <section class="left">
+          <section class="search-panel">
+            <form>
+              <div class="input-group">
+                <label>Location</label>
+                <input type="text" id="location" placeholder="Toronto, Canada" />
+              </div>
+              <div class="input-group">
+                <label>Date</label>
+                <input type="date" id="date"/>
+              </div>
+              <button id="submit-btn">Submit</button>
+            </form>
+          </section>
+  
+          <section class="results">
+            <figure class="background-img">
+              <img id='trip-img'
+                src="https://cdn.pixabay.com/photo/2017/05/09/03/47/buildings-2297210_960_720.jpg"
+              />
+            </figure>
+            <div class="backdrop">
+              <section class="header">
+                <div class="trip">
+                  <label>Trip to</label>
+                  <h3 id="trip-to">--</h3>
+                </div>
+                <div class="date">
+                  <label>On</label>
+                  <h3 id="trip-on">--</h3>
+                </div>
+              </section>
+              <section class="temp">
+                <div class="type">
+                  <label>high</label>
+                  <h1 id='high'>-</h1>
+                </div>
+                <figure>
+                  <img src="https://image.flaticon.com/icons/svg/365/365229.svg" alt="Weather Forecast">
+                </figure>
+                <div class="type">
+                  <label>low</label>
+                  <h1 id='low'>-</h1>
+                </div>
+              </section>
+              <section class="meta-info">
+                <label>
+                  this trip is <span id='day-info'>--</span>
+                </label>
+                <label>
+                 Typical weather for then is <span id='weather'>-</span>.
+                </label>
+              </section>
+              <section class="footer">
+                <button class="save" id='save-btn'>Save trip</button>
+              </section>
+            </div>
+          </section>
+        </section>
+        <section class="right">
+          <section id="recently-added" class="recently-added-block">
+            <h2>Recently added</h2>
+            <div id='result-wrapper'></div>
+          </section>
+        </section>
+      </div>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(function (registration) {
+                    console.log('Registration successful, scope is:', registration.scope);
+                })
+                .catch(function (error) {
+                    console.log('Service worker registration failed, error:', error);
+                });
+        }
+    </script>
+<script type="text/javascript" src="main.js"></script></body>
+
+</html>
