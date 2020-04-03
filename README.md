@@ -5,4 +5,3 @@ This is the last submission of the Frontend Nano Degree and it is required to cr
 
 <em>'npm start' to view project on localhost:8082</em>
 
-certificate_web_developer.pdf
